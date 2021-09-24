@@ -9,8 +9,8 @@ interface IRequest {
 
 class ShowProductService {
   public async execute({ id }: IRequest): Promise<Product | undefined> {
-    const productsRepository = getCustomRepository(ProductRepository);
-    const product = productsRepository.findOne(id);
+    const productsRepository = await getCustomRepository(ProductRepository);
+    const product = await productsRepository.findOne(id);
 
     if (!product) {
       throw new AppError('Product does not exist on the database.', 404);
