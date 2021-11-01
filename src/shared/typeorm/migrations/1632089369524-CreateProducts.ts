@@ -8,7 +8,7 @@ export class CreateProducts1632089369524 implements MigrationInterface {
         columns: [
           {
             name: 'id',
-            type: 'bigInt',
+            type: 'bigint',
             isPrimary: true,
             generationStrategy: 'increment',
           },
