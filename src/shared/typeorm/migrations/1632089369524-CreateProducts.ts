@@ -10,6 +10,7 @@ export class CreateProducts1632089369524 implements MigrationInterface {
             name: 'id',
             type: 'bigint',
             isPrimary: true,
+            isGenerated: true,
             generationStrategy: 'increment',
           },
 

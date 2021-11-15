@@ -1,7 +1,7 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('products')
-class Product {
+export default class Product {
   @PrimaryGeneratedColumn('increment')
   id: bigint;
 
@@ -20,5 +20,3 @@ class Product {
   @UpdateDateColumn()
   updated_at: Date;
 }
-
-export default Product;
